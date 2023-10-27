@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Drawing;
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -17,5 +17,21 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            p1.Top += 5;
+            p1.Left += 5;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt3.Text =  (int.Parse(txt1.Text) + int.Parse(txt2.Text)).ToString();
+        }
     }
 }

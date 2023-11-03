@@ -39,6 +39,7 @@ namespace WinFormsApp1
             this.txt2 = new System.Windows.Forms.TextBox();
             this.txt3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_Tru = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.p1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@ namespace WinFormsApp1
             this.p1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.p1.TabIndex = 0;
             this.p1.TabStop = false;
+            this.p1.Click += new System.EventHandler(this.p1_Click);
             // 
             // timer1
             // 
@@ -122,11 +124,23 @@ namespace WinFormsApp1
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bt_Tru
+            // 
+            this.bt_Tru.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_Tru.Location = new System.Drawing.Point(289, 329);
+            this.bt_Tru.Name = "bt_Tru";
+            this.bt_Tru.Size = new System.Drawing.Size(160, 88);
+            this.bt_Tru.TabIndex = 3;
+            this.bt_Tru.Text = "Trừ";
+            this.bt_Tru.UseVisualStyleBackColor = true;
+            this.bt_Tru.Click += new System.EventHandler(this.bt_Tru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1306, 660);
+            this.Controls.Add(this.bt_Tru);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt3);
             this.Controls.Add(this.txt2);
@@ -138,6 +152,7 @@ namespace WinFormsApp1
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Form1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.p1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,6 +170,7 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_Tru;
     }
 }
 

@@ -26,12 +26,34 @@ namespace WinFormsApp1
         {
             p1.Top += 5;
             p1.Left += 5;
+            Rectangle r = new Rectangle(p1.Location.X, p1.Location.Y, p1.Width, p1.Height);
+            
+            if (ClientRectangle.IntersectsWith(r))
+            {
+                p1.Top *= -1;
+                p1.Left *= -1;
+            }
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txt3.Text =  (int.Parse(txt1.Text) + int.Parse(txt2.Text)).ToString();
+            txt3.Text = (int.Parse(txt1.Text) + int.Parse(txt2.Text)).ToString();
+        }
+
+        private void p1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_Tru_Click(object sender, EventArgs e)
+        {
+            txt3.Text = (int.Parse(txt1.Text) - int.Parse(txt2.Text)).ToString();
         }
     }
 }

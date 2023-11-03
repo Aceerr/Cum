@@ -127,6 +127,7 @@ namespace WinFormsApp1
             // bt_Tru
             // 
             this.bt_Tru.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bt_Tru.ForeColor = System.Drawing.Color.Red;
             this.bt_Tru.Location = new System.Drawing.Point(289, 329);
             this.bt_Tru.Name = "bt_Tru";
             this.bt_Tru.Size = new System.Drawing.Size(160, 88);

@@ -38,7 +38,11 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if(txt1.Text != "")
+=======
+            if(txt1.Text != "" && txt2.Text !="")
+>>>>>>> feature-cal
             txt3.Text = (int.Parse(txt1.Text) + int.Parse(txt2.Text)).ToString();
         }
 
